@@ -14,6 +14,13 @@
     gap: 10px;
 }
 
+@media screen and (max-width: 600px) {
+    .second-layout {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: unset;
+    }
+}
+
 header, footer {
     grid-column: 1 / 4;
 }
