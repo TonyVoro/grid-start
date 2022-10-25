@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.second-layout {
+    display: grid;
+    grid-template-columns: minmax(100px, 300px) 1fr minmax(100px, 300px);
+    grid-template-rows: auto auto 1fr auto;
+    background-color: lightblue;
+    min-height: 100vh;
+    padding: 1rem;
+    gap: 10px;
+}
+
+header, footer {
+    grid-column: 1 / 4;
+}
+
+aside {
+    grid-row: 2 / 4;
+}
+
+.left-aside {
+    grid-column: 1 / 2;
+}
+
+.right-aside {
+    grid-column: 3 / 4;
+}
+
+header, footer, main, aside, nav {
+    padding: 1rem;
+    border: 2px solid red;
+}
